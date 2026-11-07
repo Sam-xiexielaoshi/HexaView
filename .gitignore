@@ -42,3 +42,7 @@ Thumbs.db
 
 # Temporary test files
 *.tmp
+binary_test.bin
+empty.bin
+multirow.bin
+sample.txt
