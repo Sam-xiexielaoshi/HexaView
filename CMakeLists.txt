@@ -13,6 +13,7 @@ set(CMAKE_C_EXTENSION OFF)
 add_executable(HexaView
 	src/main.c
 	src/file_reader.c
+	src/hex_dump.c
 )
 
 target_include_directories(HexaView PRIVATE
