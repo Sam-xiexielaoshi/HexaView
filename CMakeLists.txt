@@ -26,3 +26,14 @@ target_compile_options(HexaView PRIVATE
 	-Wconversion
 	-Wshadow
 )
+
+include(CTest)
+
+if(BUILD_TESTING)
+	add_test(
+		NAME HexVeiw_Integration
+		COMMAND bash
+			${CMAKE_CURRENT_SOURCE_DIR}/tests/test_reader.sh
+			$<TARGET_FILE:HexaView>
+		)
+endif()
